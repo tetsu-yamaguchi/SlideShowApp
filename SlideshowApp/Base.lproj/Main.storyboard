@@ -26,28 +26,17 @@
                                 <rect key="frame" x="46" y="70" width="283" height="300"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="a1g-wo-xHx"/>
+                                    <constraint firstAttribute="height" constant="300" id="4TV-sX-Rge"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Oog-Ef-Xaw" appends="YES" id="en8-Wb-m4J"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8G-bS-HQ0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK2-K0-6fz">
                                 <rect key="frame" x="46" y="577" width="80" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0Di-S5-cia"/>
-                                    <constraint firstAttribute="width" constant="80" id="Gzi-oH-f4c"/>
-                                </constraints>
-                                <state key="normal" title="進む"/>
-                                <connections>
-                                    <action selector="susumu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOJ-Nq-wJX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK2-K0-6fz">
-                                <rect key="frame" x="147" y="577" width="80" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4Ji-R0-2JG"/>
-                                    <constraint firstAttribute="width" constant="80" id="AqP-Uq-nVV"/>
+                                    <constraint firstAttribute="width" constant="80" id="XFj-lW-rya"/>
+                                    <constraint firstAttribute="height" constant="40" id="kbS-C7-50I"/>
                                 </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -55,32 +44,46 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iop-hu-nCX">
-                                <rect key="frame" x="249" y="577" width="80" height="40"/>
+                                <rect key="frame" x="147" y="577" width="80" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="KAR-bc-hYT"/>
-                                    <constraint firstAttribute="height" constant="40" id="SKB-Rs-RJt"/>
+                                    <constraint firstAttribute="height" constant="40" id="2fD-wE-bq0"/>
+                                    <constraint firstAttribute="width" constant="80" id="h3J-6N-p2F"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saiseiteisi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfW-hg-ioT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8G-bS-HQ0">
+                                <rect key="frame" x="249" y="577" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="VQI-64-fOd"/>
+                                    <constraint firstAttribute="height" constant="40" id="k7F-BU-vgj"/>
+                                </constraints>
+                                <state key="normal" title="進む"/>
+                                <connections>
+                                    <action selector="susumu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOJ-Nq-wJX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="iop-hu-nCX" secondAttribute="trailing" constant="30" id="BCK-50-fYR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iop-hu-nCX" secondAttribute="bottom" constant="50" id="GeN-HT-qV1"/>
-                            <constraint firstItem="8E2-yi-Akx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Ia1-P4-HFr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8E2-yi-Akx" secondAttribute="trailing" constant="30" id="J0a-nb-K0C"/>
-                            <constraint firstItem="8E2-yi-Akx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="NFT-Vg-tTT"/>
-                            <constraint firstItem="BK2-K0-6fz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RhN-yF-Ypv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BK2-K0-6fz" secondAttribute="bottom" constant="50" id="Ui9-O6-DS6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K8G-bS-HQ0" secondAttribute="bottom" constant="50" id="svr-PN-5rb"/>
-                            <constraint firstItem="K8G-bS-HQ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="zHe-K8-e0z"/>
+                            <constraint firstItem="8E2-yi-Akx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="28C-H8-tcE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8E2-yi-Akx" secondAttribute="trailing" constant="30" id="4Cf-Ss-dBb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iop-hu-nCX" secondAttribute="bottom" constant="50" id="F4x-2o-0CK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BK2-K0-6fz" secondAttribute="bottom" constant="50" id="JDs-4I-AEv"/>
+                            <constraint firstItem="BK2-K0-6fz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Yf7-27-P64"/>
+                            <constraint firstItem="iop-hu-nCX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iQ4-qT-jRg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K8G-bS-HQ0" secondAttribute="bottom" constant="50" id="lnC-bl-cjQ"/>
+                            <constraint firstItem="8E2-yi-Akx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="qkK-eh-Wj3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K8G-bS-HQ0" secondAttribute="trailing" constant="30" id="sT7-0v-vWc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Button3" destination="iop-hu-nCX" id="BYh-Ck-NOx"/>
+                        <outlet property="button1" destination="K8G-bS-HQ0" id="aJQ-Ml-c7T"/>
+                        <outlet property="button2" destination="BK2-K0-6fz" id="Oz9-4c-FTx"/>
+                        <outlet property="button3" destination="iop-hu-nCX" id="MEt-pf-jlJ"/>
                         <outlet property="slide" destination="8E2-yi-Akx" id="FEa-RV-0ga"/>
                         <segue destination="QjQ-2E-VuI" kind="show" identifier="sK" id="nwy-ce-Ud7"/>
                     </connections>
@@ -92,7 +95,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-362.39999999999998" y="264.91754122938534"/>
+            <point key="canvasLocation" x="-657" y="203"/>
         </scene>
         <!--Kakudai View Controller-->
         <scene sceneID="oQX-5B-0Vk">
@@ -138,7 +141,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z30-8D-5iO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="D70-I5-EC2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="498" y="265"/>
+            <point key="canvasLocation" x="106" y="203"/>
         </scene>
     </scenes>
 </document>

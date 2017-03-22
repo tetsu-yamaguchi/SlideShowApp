@@ -29,9 +29,11 @@ class ViewController: UIViewController {
         }
         slide.image = imageArray[0]
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateshow), userInfo: nil, repeats: true)
-            Button3.setTitle("停止", for: UIControlState.normal)
+        button3.setTitle("停止", for: UIControlState.normal)
+        button1.isEnabled = false
+        button2.isEnabled = false//開始時はスライドショーはオン。
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,7 +65,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
     @IBAction func modoru(_ sender: Any) {
         if showon == 1 {
             if i > 0 {
@@ -76,15 +78,21 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var Button3: UIButton!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
     @IBAction func saiseiteisi(_ sender: Any) {
         showon = 1 - showon //0->1,1->0
         if showon == 0 {//再生が始まった。
-            Button3.setTitle("停止", for: UIControlState.normal)
+            button3.setTitle("停止", for: UIControlState.normal)
+            button1.isEnabled = false
+            button2.isEnabled = false
         }
         else {
-          Button3.setTitle("再生", for: UIControlState.normal)
-        }
+          button3.setTitle("再生", for: UIControlState.normal)
+            button1.isEnabled = true
+            button2.isEnabled = true
+            }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -93,8 +101,10 @@ class ViewController: UIViewController {
         }
     @IBAction func onTapImage(_ sender: Any) {
         showon = 1//拡大中はスライドを停止
-        Button3.setTitle("再生", for: UIControlState.normal)
+        button3.setTitle("再生", for: UIControlState.normal)
         performSegue(withIdentifier: "sK", sender: nil)
+        button1.isEnabled = true
+        button2.isEnabled = true
     }
     @IBAction func unwind(segue: UIStoryboardSegue) {
     }
